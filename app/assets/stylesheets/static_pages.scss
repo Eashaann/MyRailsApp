@@ -3,14 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; 
+  margin: 33px;
+}
 #home {
 	font-size : 20px;
 }
-
 .about-img{
 	margin : 30px;
 }
-
 #footer{
 	position:fixed;
 	bottom : 0px;
@@ -20,30 +26,42 @@
 	background-color:#f5f5f5;
 }
 
-//styling for landing page
 
-.carousel-indicators li{
-	border-color: black;
+//styling for featured page
+#featured-product{
+	padding-top:20px;
+	padding-bottom: 30px; 
 }
-
+#featured-product-name{
+	padding-bottom:30px;
+}
+.carousel{
+	width:70%; margin:0 auto;
+}
+.carousel-indicators li{
+	border-color: black; 
+}
 .carousel-caption {
 	padding-bottom : 10px;
 	color: black;
 	font-size: 15px;
+	bottom:0;  
+}
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
 
-#featured-product{
-	padding-top:20px;
-	padding-bottom: 30px;
-}
 
-#featured-product-name{
-	padding-bottom:30px;
-}
-
-// Edit page
-
+// Edit page*
 #edit-page{
 	padding-top:20px;
 	padding-bottom:30px;
 }
+
+@media (max-width:500px){
+	.carousel-inner{
+		margin-left:0;
+	}
+
+}
+
