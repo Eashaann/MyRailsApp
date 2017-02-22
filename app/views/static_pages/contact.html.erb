@@ -1,5 +1,5 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<h1>Contact Us:</h1>
+<br>
 <p>Dubai</p>
 <p>Al Ameri Tower - Al Barsha Heights(Tecom)</p>
 <p>20th Floor, Unit: 2006</p>
@@ -7,4 +7,24 @@
 <p>00971 55 287 5656</p>
 <p>00971 55 9726883</p>
 
+<%= flash[:notice] %>
 
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= label_tag :name %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+    </div>      
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :message %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+    </div>      
+  </div>
+</div>
+<%= submit_tag "Send" %>   
+<% end %>
