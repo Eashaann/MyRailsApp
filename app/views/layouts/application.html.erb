@@ -12,7 +12,7 @@
   </head>
 
   <body>
-		<!-- nav bar -->
+  	<!-- nav bar -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,14 +50,16 @@
 					<% end %>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
-		</nav>
-		<p class="notice"> <%= notice %></p>
-		<div class= "container">
+		</nav> <!-- navbar end -->
+		
+		<div class="container"><!--  page content -->
 			<%= yield %>
 			<footer class="container-fluid" id="footer">
 			  &copy; 2017 Bike Berlin
 			</footer>
-		</div>
+		</div> <!-- page content end -->
+		<p class="notice"> <%= notice %></p>
+	
   </body>
 </html>
 
