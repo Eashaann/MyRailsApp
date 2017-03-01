@@ -2,10 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-#new-products{
-	color : red;
-	margin-left :0; 
+//products page styling
+.products-grid{
+ 	padding: 30px ;
+ 	margin: 10px 0;
+	box-shadow:2px 2px 5px #E0E0E0;
+}
+.products-img{
+	min-height: 30px;
+}
+textarea{
+  padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+}
+#new-product{
+  margin: 20px 20px 70px; 
+  text-align: right;
 }
 
 // Edit page*

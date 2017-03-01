@@ -23,3 +23,34 @@
 #thankyou{
 	margin-top: 25%;
 }
+
+//forgot-password styling
+#forgot-password{
+	max-width: 30%;
+	margin: 30px auto; 
+}
+#forgot-password h3{
+	margin: 40px auto; 
+}
+#reset-password{
+	margin: 30px 0 20px 0;
+}
+
+//Sign up  page styling
+#sign-up{
+	max-width: 40%;
+	margin: 20px auto;
+}
+#sign-up-btn{
+	margin: 30px 0 20px;
+	padding-left: 75%;
+}
+#login{
+	padding-left: 78%;
+}
+
+//forgot password page styling
+	#error_explanation ul{
+	list-style-type: none; 
+	text-align: center;
+}

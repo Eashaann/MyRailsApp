@@ -1,11 +1,33 @@
-<div class="col-sm-2 col-md-4">
-  <%= image_tag(product.image_url, class: "img-responsive") %>
-  <h3><%= product.name %></h3>
-  <p><%= product.description %></p>
-  <p><%= product.colours %></p>
-  <strong>$<%= product.price %></strong>
-  <p><%= link_to 'Show', product %>
-    <%= link_to 'Edit', edit_product_path(product) %>
-    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </p>
-</div><!-- /col -->
+<div class="col-sm-6 col-md-4 products-grid">
+	<!-- product image -->
+	<div class="row products-img">
+	 <% if product.image_url== nil || product.image_url==""%>
+ 			<%= image_tag("Empty-img.png", class: "img-responsive") %>
+ 		<% else %>
+	 		<%= image_tag(product.image_url, class: "img-responsive") %>
+ 		<% end %>
+	</div>
+
+	<!-- product name & description -->
+  <div class="row">
+		<h3><%= product.name %></h3>
+		<textarea rows="4"><%= product.description %></textarea>
+
+	  <!-- 	product color -->
+	  <% if product.colours== nil || product.colours==""%>
+ 			<p>black</p>
+ 		<% else %>
+	 		<p><%= product.colours %></p>
+ 		<% end %>
+
+	  <strong>$<%= product.price %></strong>
+	  <p><%= link_to 'Show', product %>
+	    <%= link_to 'Edit', edit_product_path(product) %>
+	    <%= link_to 'Destroy', product, method: :delete, data: { conf: 'Are you sure?' } %>
+	  </p>
+  </div>
+ </div><!-- /col -->
+
+
+
+
