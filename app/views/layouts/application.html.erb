@@ -52,14 +52,19 @@
 		  </div><!-- /.container-fluid -->
 		</nav> <!-- navbar end -->
 		
+	
+
 		<div class="container"><!--  page content -->
+			<% if notice %>
+  			<p id="notice" class="alert alert-info"><%= notice %></p>
+			<% end %>
+
 			<%= yield %>
 			<footer class="container-fluid" id="footer">
 			  &copy; 2017 Bike Berlin
 			</footer>
 		</div> <!-- page content end -->
-		<p class="notice"> <%= notice %></p>
-	
+		
   </body>
 </html>
 

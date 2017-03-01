@@ -7,4 +7,11 @@ class UserMailer < ApplicationMailer
         :to => 'donaeasha25@gmail.com',
         :subject => "A new contact form message from #{name}")
   end
+
+  def send_new_user_message(user)
+    @user = user
+    mail(:from => 'donaeasha25@gmail.com',
+    		:to => user.email,
+    		:subject => "New User created please review and enable.")
+  end
 end
