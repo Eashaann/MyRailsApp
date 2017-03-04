@@ -1,39 +1,29 @@
-<div class="small-container">
+<div class="medium-container show-area">
   <br>
   <br>
   <p id="notice"><%= notice %></p>
 
-  <div class="show">
-    <p>
-      <strong>Name:</strong>
-      <%= @product.name %>
-    </p>
+  <div class="row">
+    <div class="col-md-6 show-image">
+        <%= image_tag(@product.image_url, class: "img-responsive img-rounded") %>
+    </div>
+
+    <div class="col-md-6 show-description">
+        <strong><h3><%= @product.name %></h3></strong>
+      <br>
+        <p><%= @product.description %></p>
+      <br>
+        <p><%= @product.colours%></p>
+       <br> 
+        <p><%= @product.price%></p>
+    </div>
   </div>
-  <div class="show">
-    <p>
-      <strong>Description:</strong>
-      <%= @product.description %>
-    </p>
-  </div>
- <div class="show">
-    <p>
-      <strong>Image url:</strong>
-      <%= @product.image_url %>
-    </p>
-  </div>
-  <div class="show">
-    <p>
-      <strong>Colours:</strong>
-      <%= @product.colours%>
-    </p>
-  </div>
-  <div class="show">
-    <p>
-      <strong>Price:</strong>
-      <%= @product.price%>
-    </p>
-  </div>
+
+
+
+  
+
+  <div class="btn btn-default "> <%= link_to 'Edit', edit_product_path(@product) , class:"decoration" %> </div>
+  <div class="btn btn-default "> <%= link_to 'Back', products_path , class:"decoration" %></div>
  
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
 </div>

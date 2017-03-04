@@ -7,18 +7,26 @@
 	padding :0;
 }
 body {
-  background-color:  #f4f6f6;
+  background-color:  #f4f6f6; 
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; 
  }
 .container{
-	margin-top: 50px;
+	margin-top: 50px; opacity: 0.8;	
 	background-color: #fff;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	min-height: 730px; 
 	text-align: justify; 
+}
+.small-container{
+	width: 50%;
+	margin: 0 auto; 
+}
+.medium-container{
+	width: 75%;
+	margin: 0 auto;
 }
 #footer{
 	position: fixed;
@@ -76,6 +84,11 @@ body {
 }
 #contact-content p,h3{
 	text-align: center;
+}
+
+//buttons stylings
+a:hover{
+	text-decoration: none;
 }
 
 @media (max-width:500px){
