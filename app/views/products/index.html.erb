@@ -1,4 +1,4 @@
-<h2 class="heading">Products</h2>
+<h2 class="products-heading">Products</h2>
 
 <div class="row">
   <%# @products.each do |product| %>
@@ -6,9 +6,10 @@
   <%# end %>
 </div>
 
-<strong><p id="new-product"><%= link_to 'New Product', new_product_path %></p></strong>
-
-
+<div id="new-product">
+	<%= link_to 'New Product', new_product_path , class:"btn btn-default btn-special" %>
+</div>
+	
 
 
 

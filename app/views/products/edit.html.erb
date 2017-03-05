@@ -1,10 +1,11 @@
-<div class="small-container">
-	<h2 id="edit-page">Editing Product</h2>
+<div class="medium-container product-edit">
+	
+	<h2 id="edit-page">Edit Product</h2>
 
 	<%= render 'form', product: @product %>
 
-	<%= link_to 'Show', @product %> |
-	<%= link_to 'Back', products_path %>
+	<%= link_to 'Show', @product ,class:"btn btn-default btn-special btn-xs" %> |
+	<%= link_to 'Back', products_path ,class:"btn btn-default btn-special btn-xs" %>
 </div>
 
 
