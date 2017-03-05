@@ -11,7 +11,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; 
-  background: url("background.jpg") no-repeat;  
+  background: image-url("background.jpg") no-repeat;  
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -82,4 +82,9 @@ body {
 }
 .featured-heading{
 	padding: 50px 100px 0; 
+}
+
+//thank you page
+.thankyou-page{
+	padding: 30px;
 }
