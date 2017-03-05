@@ -2,31 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//products page styling
+//products index page styling
 .products-grid{
  	padding: 30px ;
  	margin: 10px 0;
-	box-shadow:2px 2px 5px #E0E0E0;
+	box-shadow: 2px 2px 5px #e2e2e2; 
+	background-color: #121212 ; 
+	opacity: 0.8;
+	color: #e2e2e2; 
+	text-align: center;
 }
 .products-img{
-	min-height: 380px;
+	min-height: 280px;
 }
 textarea{
-  padding: 10px;
+  padding: 20px;
 	width: 100%;
 	border: none;
-	text-align: left;
+	background-color: #121212 ;
+}
+.products-heading{
+	color: #e2e2e2;
+	background-color: #121212 ;  
+	opacity: 0.8;
+	margin: 20px -15px 5px -15px;
+	padding: 10px;
 }
 #new-product{
-  margin: 20px 20px 70px; 
-  text-align: right;
+	margin: 20px 0 80px;
 }
 
-// Edit page*
-#edit-page{
-	padding-top: 20px;
-	padding-bottom: 30px;
+//products show page
+.products-show{
+	padding: 20px;
+	color: #fff;
 }
+.product-show-desc{
+	padding: 90px 70px;
+	background-color: #121212;
+	opacity: 0.8; 
+	border-radius: 5px;
+}
+<<<<<<< HEAD
 
 //show page styling
 .show-image{
@@ -35,3 +52,14 @@ textarea{
 .show-description p{
 	padding: 10px 30px;
 }
+=======
+
+//products-eidt-page
+.product-edit{
+	padding: 30px;
+}
+#edit-page{
+	margin: 0;
+}
+
+>>>>>>> comments

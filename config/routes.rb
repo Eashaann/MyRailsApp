@@ -6,11 +6,13 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'static_pages#contact'
 
-  get 'welcome' , to: 'static_pages#index'
+  # get 'welcome' , to: 'static_pages#index'
   
   get 'featured', to:'static_pages#landing_page'
 
-  root 'products#index'
+  # root 'products#index'
+
+  root 'static_pages#index'
 
   post 'static_pages/thank_you'
 

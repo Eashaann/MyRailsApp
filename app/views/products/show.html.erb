@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="medium-container show-area">
   <br>
   <br>
@@ -27,3 +28,28 @@
   <div class="btn btn-default "> <%= link_to 'Back', products_path , class:"decoration" %></div>
  
 </div>
+=======
+<div class="medium-container products-show">
+  <p id="notice"><%= notice %></p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <%= image_tag(@product.image_url, class: "img-responsive img-rounded") %>
+    </div>
+
+    <div class="col-md-6 ">
+      <div class="product-show-desc">
+        <h3><%= @product.name %> </h3>
+        <p><%= @product.description %></p>
+        <p><%= @product.colours%></p>
+        <p>$<%= @product.price%></p> 
+      </div>
+    </div>
+  </div>  
+  <div>
+    <br>
+    <%= link_to 'Edit', edit_product_path(@product) ,class:"btn btn-default btn-special  btn-xs" %> |
+    <%= link_to 'Back', products_path ,class:"btn btn-default btn-special  btn-xs" %>
+  </div>
+</div>s
+>>>>>>> comments
