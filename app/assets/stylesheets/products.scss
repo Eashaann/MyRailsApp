@@ -32,18 +32,6 @@ textarea{
 	margin: 20px 0 80px;
 }
 
-//products show page
-.products-show{
-	padding: 20px;
-	color: #fff;
-}
-.product-show-desc{
-	padding: 90px 70px;
-	background-color: #121212;
-	opacity: 0.8; 
-	border-radius: 5px;
-}
-
 //products-eidt-page
 .product-edit{
 	padding: 30px;
@@ -56,4 +44,37 @@ textarea{
 //new products page
 .new-products{
 	padding: 20px 30px;
+}
+
+//show page styling
+.products-show{
+	padding: 20px;
+	color: #fff;
+}
+.product-show-desc{
+	padding: 10px 70px;
+	border-radius: 5px;
+}
+.comment-row{
+	padding-left: 30px; 
+}
+.product-show-desc, .comment-row{
+	background-color: #121212;
+	opacity: 0.8; 
+}
+.show-comment{
+	color: black;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px; 	
+}
+.comment-area{
+	border-radius: 5px; 
+	background-color: #fff;
+}
+.comment-submit{
+	margin-bottom: 50px; 
+}
+.comment-section{
+	margin-bottom: 50px;	
 }

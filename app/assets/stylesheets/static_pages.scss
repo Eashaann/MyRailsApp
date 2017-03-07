@@ -21,15 +21,14 @@ body {
 }
 .medium-container{
 	width: 70%;
-	margin: 0 auto;
-	position: relative; top:80px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .small-container{
 	width: 40%;
+}
+.small-container, .medium-container{
 	margin: 0 auto;
 	position: relative;
-	top: 80px;
+	top: 70px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-special{
@@ -50,7 +49,7 @@ body {
 }
 
 
-//about page styling
+//About page styling
 .about-content{
 	padding: 30px 40px;
 	background-color:#121212;
@@ -79,6 +78,9 @@ body {
 //products featured product page
 .carousel-inner > .item > img {
   margin: 0 auto;
+}
+.carousel-caption {
+	color: black;
 }
 .featured-heading{
 	padding: 50px 100px 0; 
