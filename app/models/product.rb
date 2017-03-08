@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-	has_many :comments
+  has_many :comments
   has_many :orders
 
   def self.search(search_term)
@@ -19,6 +19,12 @@ class Product < ApplicationRecord
 	end
 
   def average_rating
-  comments.average(:rating).to_f
-end
+    comments.average(:rating).to_f
+  end
+
+#validations
+  validates :name, presence: true
+  validates :description, presence: true
+  validates :price, presence: true
+  validates :price, numericality: { only_integer: true } 
 end
