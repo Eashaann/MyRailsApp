@@ -11,7 +11,7 @@
 	<!-- product name & description -->
   <div class="row">
 		<h3><%= product.name %></h3>
-		<textarea class="form-control" rows="5"><%= product.description %></textarea>
+		<textarea class="form-control product-desc" rows="5"><%= product.description %></textarea>
 
 	  <!-- 	product color -->
 	  <div>
@@ -28,9 +28,8 @@
 		    <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-default btn-xs" %>
 		  	</p>
 	  </div>
-	  
-  </div>
- </div><!-- /col -->
+	</div>
+</div><!-- /col -->
 
 
 

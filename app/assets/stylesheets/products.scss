@@ -4,10 +4,10 @@
 
 //products index page styling
 .products-grid{
- 	padding: 30px ;
+ 	padding: 30px;
  	margin: 10px 0;
 	box-shadow: 2px 2px 5px #e2e2e2; 
-	background-color: #121212 ; 
+	background-color: #121212; 
 	opacity: 0.8;
 	color: #e2e2e2; 
 	text-align: center;
@@ -15,15 +15,15 @@
 .products-img{
 	min-height: 360px;
 }
-textarea{
-  padding: 20px;
-	width: 100%;
-	border: none;
-	background-color: #121212 ;
+.product-desc{
+	padding: 20px;
+ 	border: none;
+	background-color: #121212;
+	color: rgb(226, 226, 226);
 }
 .products-heading{
 	color: #e2e2e2;
-	background-color: #121212 ;  
+	background-color: #121212;  
 	opacity: 0.8;
 	margin: 20px -15px 5px -15px;
 	padding: 10px;
