@@ -7,9 +7,11 @@
 </div>
 
 <div id="new-product">
-	<%= link_to 'New Product', new_product_path , class:"btn btn-default btn-special" %>
+	<% if signed_in? && current_user.admin? %>
+		<%= link_to 'New Product', new_product_path , class:"btn btn-default btn-special" %>
+	<% end %>
 </div>
-	
+
 
 
 

@@ -25,7 +25,9 @@
     <%= will_paginate @comments %>
     <%= render 'comments' %>  
     <br>
-    <%= link_to 'Edit', edit_product_path(@product) ,class:"btn btn-default btn-special  btn-xs" %> |
+    <% if signed_in? && current_user.admin? %>
+      <%= link_to 'Edit', edit_product_path(@product) ,class:"btn btn-default btn-special  btn-xs" %> |
+    <% end %>
     <%= link_to 'Back', products_path ,class:"btn btn-default btn-special  btn-xs" %>
   </div>
 </div>
