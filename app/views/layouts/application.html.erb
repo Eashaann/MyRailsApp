@@ -32,7 +32,7 @@
 		      	<li ><%=link_to 'Featured Products' , featured_path%></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		      	 <li>
+		      	<li>
 		        	<% if user_signed_in? %>
 						  	<%=link_to 'Orders' , orders_path%></li>
 						  <% end %>
@@ -42,7 +42,7 @@
 		        <li><%=link_to 'Products' , products_path%></li>
 		        <li>
 		        	<% if user_signed_in? %>
-						    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+						    <%= link_to('Logout', destroy_user_session_path, :method => :delete , data: { confirm: "Are you sure?" }) %>
 						  <% else %>
 						    <%= link_to('Login', new_user_session_path) %>
 						  <% end %>
@@ -60,7 +60,7 @@
 					<% end %>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
-		</nav> <!-- navbar end -->
+		</nav><!-- navbar end -->
 		
 		<div class="container"><!--  page content -->
 			<% if notice %> 

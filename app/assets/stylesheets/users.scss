@@ -7,13 +7,6 @@
 	padding: 30px 60px;
 }
 
-//Edit user page
-.edit-user{
-	padding: 20px 50px; color: #fff;
-	background-color: #121212;
-	opacity: 0.7; 
-	border-radius: 10px;
-}
 
 //forgot password page 
 .forgot-password{
@@ -26,4 +19,20 @@
 //sign up page 
 .sign-up{
 	padding: 20px 50px;
+}
+
+//show user page
+.user-show{
+	padding: 30px;
+}
+
+//Edit user page
+.user-edit{
+	padding: 20px 50px; 
+	border-radius: 10px;
+}
+
+//new user page
+.new-user{
+	padding: 30px;
 }

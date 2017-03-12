@@ -1,7 +1,11 @@
 <div class="medium-container products-show">
   <div class="row">
     <div class="col-md-6">
-      <%= image_tag(@product.image_url, class: "img-responsive img-rounded") %>
+      <% if @product.image_url== nil || @product.image_url==""%>
+        <%= image_tag("Empty-img.png", class: "img-responsive") %>
+      <% else %>
+        <%= image_tag(@product.image_url, class: "img-responsive img-rounded") %>
+      <% end %>
     </div>
 
     <div class="col-md-6 ">

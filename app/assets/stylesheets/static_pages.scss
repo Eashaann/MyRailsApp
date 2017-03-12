@@ -11,13 +11,10 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; 
-  background: image-url("background.jpg") no-repeat;  
-	background-size: cover;
-	background-attachment: fixed;
 }
-.container{
-	margin-top: 30px; 
-	text-align: justify; 
+.navbar{
+	position: initial; 
+	margin-bottom: 20px; 
 }
 .medium-container{
 	width: 70%;
@@ -27,8 +24,6 @@ body {
 }
 .small-container, .medium-container{
 	margin: 0 auto;
-	position: relative;
-	top: 70px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-special{
@@ -40,8 +35,9 @@ body {
 	color: #fff;
 }
 .alert {
-  margin: 30px 450px;
- }
+  margin-bottom: 10px;
+  margin-left: 40%;
+}
 #footer{
 	position: fixed;
 	bottom : 0;
@@ -52,12 +48,10 @@ body {
 }
 
 
+
 //About page styling
 .about-content{
 	padding: 30px 40px;
-	background-color:#121212;
-	opacity: 0.8;
-	color: #fbfbfb;
 	border-radius: 30px;
 }
 #about-heading{
@@ -72,11 +66,6 @@ body {
 }
 
 
-//welcome page styling
-.welcome-page{
-	margin: 50px auto;
-}
-
 
 //products featured product page
 .carousel-inner > .item > img {
@@ -86,10 +75,35 @@ body {
 	color: black;
 }
 .featured-heading{
-	padding: 50px 100px 0; 
+	padding: 10px 20px; 
 }
 
 //thank you page
 .thankyou-page{
 	padding: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
