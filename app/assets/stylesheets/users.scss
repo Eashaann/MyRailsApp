@@ -36,3 +36,21 @@
 .new-user{
 	padding: 30px;
 }
+
+
+@media (max-width: 500px) {
+.user-edit, .log-in-page, .sign-up, .forgot-password{
+	width: 100%;
+	padding: 15px; 
+	}
+.user-edit{
+	padding: 25px;
+	}
+.forgot-password{
+	 margin: 0; 
+	 padding:25px;
+	}
+.forgrt-passwrd-btn{
+	font-size: .78em;
+	}
+}
