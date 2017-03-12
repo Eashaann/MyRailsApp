@@ -2,40 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//log-in page styling
-.log-in-page{
-	padding: 30px 60px;
+
+//show user page, new user page, forgot password page , log-in page styling
+.user-show, .new-user, .forgot-password, .log-in-page{
+	padding: 30px; 
 }
 
-
-//forgot password page 
-.forgot-password{
-	padding: 40px; 
+//sign up page ,Edit user page
+.sign-up, .user-edit{
+	padding: 20px 50px;
+	border-radius: 10px;
 }
+
 .reset{
 	margin: 20px 0;
 }
 
-//sign up page 
-.sign-up{
-	padding: 20px 50px;
-}
-
-//show user page
-.user-show{
-	padding: 30px;
-}
-
-//Edit user page
-.user-edit{
-	padding: 20px 50px; 
-	border-radius: 10px;
-}
-
-//new user page
-.new-user{
-	padding: 30px;
-}
 
 
 @media (max-width: 500px) {

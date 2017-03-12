@@ -88,8 +88,7 @@ body {
 
 
 @media (max-width: 500px) {
-   
-.contact-content, .about-content{
+.medium-container, .small-container, .contact-content, .about-content{
 	width: 100%;
 	padding: 15px;
 	}
@@ -97,6 +96,7 @@ body {
   margin-bottom: 10px;
   margin-left: 0;
 	}
+
 }
 
 
