@@ -54,6 +54,7 @@ end
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
+	gem 'rspec-rails', '~> 3.5'
 end
 
 gem 'devise'
@@ -62,6 +63,3 @@ gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate', '~> 3.1.0'
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.5'
-end
