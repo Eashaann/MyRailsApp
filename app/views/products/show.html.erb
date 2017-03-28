@@ -13,13 +13,19 @@
         <h3><%= @product.name %> </h3>
         <p><%= @product.description %></p>
         <p><%= @product.colours%></p>
-        <p>$<%= @product.price%></p> 
+        <p>$<%= @product.price%></p>
+
         <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
         <% if @product.highest_rating_comment != nil %>
           <p>Highest Rating: <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div> </p>
           <p>Lowest Rating: <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div> </p>
+          <br>
+        <% end %>  
+        <%= form_tag "/payments/create" do %>
+          <%= render partial: "shared/stripe_checkout_button" %>
         <% end %>
+       
       </div>
     </div>
   </div>  
