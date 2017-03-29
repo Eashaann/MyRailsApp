@@ -9,7 +9,7 @@
 	box-shadow: 2px 2px 5px #e2e2e2; 
 	text-align: center;
 }
-.products-img{
+.products-img {
 	padding: 10px; 
 	min-height: 300px;
 }
@@ -36,7 +36,9 @@
 #new-products-page{
 	padding: 20px 30px;
 }
-
+#error_explanation{
+	color:red;
+}
 
 
 //show page styling
@@ -71,7 +73,10 @@
 	padding: 0 30px 30px 30px; 
 }
 
+.abcd{
 
+	min-height: 300px;
+}
 
 @media (max-width: 500px) {
  .product-show-desc, .comment-section, {
@@ -80,3 +85,5 @@
 	}
 
 }
+
+

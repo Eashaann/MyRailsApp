@@ -4,8 +4,8 @@
 	 <% if product.image_url== nil || product.image_url==""%>
  			<%= image_tag("Empty-img.png", class: "img-responsive") %>
  		<% else %>
-	 		<%= image_tag(product.image_url, class: "img-responsive img-rounded") %>
- 		<% end %>
+ 			<%= link_to image_tag(product.image_url, class: "img-responsive img-rounded"), product %>
+	 	<% end %>
 	</div>
 
 	<!-- product name & description -->
