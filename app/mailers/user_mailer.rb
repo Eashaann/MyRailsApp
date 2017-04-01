@@ -14,4 +14,11 @@ class UserMailer < ApplicationMailer
     		:to => user.email,
     		:subject => "New User created please review and enable.")
   end
+
+  def send_order_created_message(order)
+    @order = order
+    mail(:from => 'donaeasha25@gmail.com',
+        :to => order.user.email,
+        :subject => "Your Order ID: #{order.id} ")
+  end
 end

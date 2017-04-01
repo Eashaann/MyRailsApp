@@ -21,11 +21,12 @@
           <p>Highest Rating: <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div> </p>
           <p>Lowest Rating: <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div> </p>
           <br>
-        <% end %>  
-        <%= form_tag "/payments/create" do %>
-          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %> 
+        <% if user_signed_in? %> 
+          <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+          <% end %>
         <% end %>
-       
       </div>
     </div>
   </div>  

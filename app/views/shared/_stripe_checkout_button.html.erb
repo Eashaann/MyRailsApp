@@ -3,7 +3,8 @@
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
  	data-name="Dubai Bikes"
   data-description=<%= @product.name %> 
- 	
-  data-image=<%= image_path(@product.image_url) %>
+ 	data-image=<%= image_path(@product.image_url) %>
   data-amount=<%= @product.price*100 %> >
 </script>
+
+<%= hidden_field_tag(:product_id, @product.id) %>
