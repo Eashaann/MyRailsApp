@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   
   get 'featured', to:'static_pages#landing_page'
 
+  get 'home', to: 'static_pages#home'
+
   root 'static_pages#index'
 
   post 'static_pages/thank_you'
@@ -20,6 +22,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :create, :destroy] 
 
   post 'payments/create', to:'payments#create'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

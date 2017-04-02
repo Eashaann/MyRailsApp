@@ -13,9 +13,9 @@
 	padding: 10px; 
 	min-height: 300px;
 }
-.product-desc{
-	padding: 20px; 
- 	border: none;
+#description{
+	height: 75px;
+	overflow: hidden; 
 }
 #new-product-btn{
 	margin-top: 20px;
@@ -71,6 +71,15 @@
 .comment-section{
 	margin-bottom: 50px;
 	padding: 0 30px 30px 30px; 
+}
+
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
 }
 
 
