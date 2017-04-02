@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-#require 'byebug'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -34,10 +34,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
+#group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
+
+#end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -56,6 +56,8 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails', '~> 3.5'
 	gem "factory_girl_rails", "~> 4.0"
+  gem 'byebug'
+ #gem 'byebug', platform: :mri
 end
 
 gem 'devise'

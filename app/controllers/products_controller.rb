@@ -4,12 +4,12 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-       byebug
+    
     if params[:q]
       search_term = params[:q]
       logger.debug "search term : #{search_term}"
       @products =  Product.search(search_term)
-   
+      #byebug
       # return our filtered list here
     else
       @products = Product.all
