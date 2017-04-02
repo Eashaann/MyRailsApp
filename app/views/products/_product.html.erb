@@ -10,6 +10,7 @@
 
 	<!-- product name & description -->
   <div class="row">
+  	<% logger.debug "Product: #{product.name}"%>
 		<h3><%= product.name %></h3>
 		<textarea class="form-control product-desc" rows="5"><%= product.description %></textarea>
 

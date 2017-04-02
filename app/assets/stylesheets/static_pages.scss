@@ -33,9 +33,18 @@ body {
 	background-color: #001a33;
 	color: #fff;
 }
+.btn-search{
+	background-color: #cccccc;
+}
 .btn-special:hover{
 	background-color: #003566;
 	color: #fff;
+}
+.btn-search:hover{
+	background-color: #DCDCD5;
+}
+.search-bar{
+	width: 50%; color:red;
 }
 .alert {
   margin:0 auto 10px auto;
@@ -97,7 +106,6 @@ body {
 	}
 
 }
-
 
 
 
