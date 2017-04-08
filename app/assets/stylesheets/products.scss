@@ -42,19 +42,25 @@
 
 
 //show page styling
+.show-img{
+	max-width: 90%; 
+}
+.show-img-area{
+	padding: 90px 80px 70px 70px; 
+}
 .products-show{
 	padding: 20px; 
 	margin-bottom: 80px;
 }
 .product-show-desc{
 	padding: 0 70px 10px;  
-	border-radius: 5px;
+	border-radius: 5px;  
 } 
 .product-show-desc h3{
-	margin-top: 0;
+	margin-top: 0; 
 } 
 .product-reviews{
-	padding: 10px 30px;
+	padding: 10px 30px; 
 }
 .show-comment{
 	width: 50%;

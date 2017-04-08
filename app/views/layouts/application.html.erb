@@ -6,7 +6,8 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -33,25 +34,16 @@
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		      	<li><%=link_to 'Products' , products_path%></li>
-		      	<li>
-		        	<% if user_signed_in? %>
-						  	<%=link_to 'My Orders' , orders_path%></li>
-						</li>
-		        <li><%=link_to 'About' , about_path%></li>
-		        <li><%=link_to 'Contacts' , contact_path%></li>
-		        
-		        <li>
-		        	
-						  <%= link_to('Logout', destroy_user_session_path, :method => :delete , data: { confirm: "Are you sure?" }) %>
-						  <% else %>
-						    <%= link_to('Login', new_user_session_path) %>
-					
-					  </li>
-					  <li>
-		       
-						  <%=link_to 'My Profile' , edit_user_registration_path%></li>
-						  <% end %>
-					  </li>
+		     		<li><%=link_to 'About' , about_path%></li>
+		     		<li><%=link_to 'Contacts' , contact_path%></li>
+
+		        <% if user_signed_in? %>
+							<li>	<%=link_to 'My Orders' , orders_path%></li>
+				    	<li><%=link_to 'My Profile' , edit_user_registration_path%></li>
+			        <li><%= link_to('Logout', destroy_user_session_path, :method => :delete , data: { confirm: "Are you sure?" }) %></li>
+						<% else %>
+						  <li><%= link_to('Login', new_user_session_path) %>  </li>	
+						<% end %>
 		      </ul>
 		      
 		      <!-- search field -->

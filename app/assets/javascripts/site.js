@@ -7,4 +7,10 @@ $(document).on('turbolinks:load', function(){
         return $(this).attr('data-score');
       }
     });
+
+
+  $('.zoom').elevateZoom();
+
+
+
 });
