@@ -20,7 +20,7 @@ body {
 	width: 70%;
 }
 .small-container{
-	width: 40%;
+	width: 35%;
 }
 .small-container, .medium-container{
 	margin: 0 auto;
@@ -46,8 +46,9 @@ body {
 .search-bar{
 	width: 50%; color:red;
 }
-.alert {
-  margin:0 auto 10px auto;
+.glyphicon{
+	display: block;
+	text-align: center;
 }
 #footer{
 	position: fixed; 
@@ -57,7 +58,6 @@ body {
 	padding: 20px 0 20px 80px;
 	background-color: #f5f5f5; 
 }
-
 
 
 //About page styling

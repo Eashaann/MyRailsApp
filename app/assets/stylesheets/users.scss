@@ -5,16 +5,30 @@
 
 //show user page, new user page, forgot password page , log-in page styling
 .user-show, .new-user, .forgot-password, .log-in-page, .change-password{
-	padding: 30px; 
+	padding: 30px 50px 50px; 
 }
 
-//sign up page ,Edit user page
+//sign up page ,Edit user page,log in page
+.log-in-page{
+	text-align: center;
+}
+.sign-in{
+	display: block; 
+	width: 100% ;
+}
 .sign-up, .user-edit{
 	padding: 20px 50px;
-	border-radius: 10px; 
+}
+.sign-up h3{
+	text-align: center;
 }
 .new-user-signup {
-	color: #215a8c;
+	color: #666666;
+	margin-bottom: 2px;
+}
+.new-user-signup:hover {
+	color: #D8D8D8;
+	text-decoration: none;
 }
 .reset{
 	margin: 20px 0;
