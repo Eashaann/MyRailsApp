@@ -1,8 +1,10 @@
 <h2 class="products-heading">Products</h2>
 
 <div class="row">
-  <%# @products.each do |product| %>   
-    <%= render @products %>
+  <%# @products.each do |product| %>  
+	<% cache(cache_key_for_products) do %>
+     <%= render @products %>
+  <% end %>
   <%# end %>
 </div>
 

@@ -1,39 +1,42 @@
-<div class="col-sm-6 col-md-3 products-grid">
-	<!-- product image -->
-	<div class="row products-img">
-	 <% if product.image_url== nil || product.image_url==""%>
- 			<%= image_tag("Empty-img.png", class: "img-responsive") %>
- 		<% else %>
- 			<%= link_to image_tag(product.image_url, class: "img-responsive img-rounded"), product %>
-	 	<% end %>
-	</div>
-
-	<!-- product name & description -->
-  <div class="row">
-  	<% logger.debug "Product: #{product.name}"%>
-		<h3><%= product.name %></h3>
-		<p id="description"><%= product.description %></p>
-
-	  <!-- 	product color -->
-	  <div>
-		  <% if product.colours== nil || product.colours==""%>
-	 			<p>black</p>
+<% cache product do %>  
+	<div class="col-sm-6 col-md-3 products-grid">
+		<!-- product image -->
+		<div class="row products-img">
+		 <% if product.image_url== nil || product.image_url==""%>
+	 			<%= image_tag("Empty-img.png", class: "img-responsive") %>
 	 		<% else %>
-		 		<p><%= product.colours %></p>
-	 		<% end %>
+	 			<%= link_to image_tag(product.image_url, class: "img-responsive img-rounded"), product %>
+		 	<% end %>
+		</div>
 
-		  <strong>$<%= product.price %></strong><br>
-		
-		  <br>
-		  <p><%= link_to 'View Details >>', product , class:"btn btn-default btn-xs" %>
-	  		<% if signed_in? && current_user.admin? %>
-	      	<%= link_to 'Edit', edit_product_path(product) , class:"btn btn-default btn-xs" %>
-			    <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-default btn-xs" %>
-			  <% end %>
-		  </p>	
-	  </div>
-	</div>
-</div><!-- /col -->
+		<!-- product name & description -->
+	  <div class="row">
+	  	<% logger.debug "Product: #{product.name}"%>
+			<h3><%= product.name %></h3>
+			<p id="description"><%= product.description %></p>
+
+		  <!-- 	product color -->
+		  <div>
+			  <% if product.colours== nil || product.colours==""%>
+		 			<p>black</p>
+		 		<% else %>
+			 		<p><%= product.colours %></p>
+		 		<% end %>
+
+			  <strong>$<%= product.price %></strong><br>
+			
+			  <br>
+			  <p><%= link_to 'View Details >>', product , class:"btn btn-default btn-xs" %>
+		  		<% if signed_in? && current_user.admin? %>
+		      	<%= link_to 'Edit', edit_product_path(product) , class:"btn btn-default btn-xs" %>
+				    <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-default btn-xs" %>
+				  <% end %>
+			  </p>	
+		  </div>
+		</div>
+	</div><!-- /col -->
+<% end %>
+
 
 
 
