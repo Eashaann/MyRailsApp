@@ -32,6 +32,16 @@
     </div>
   </div>  
  
+<h6>  
+  Views:
+  <span class="badge">
+    <%= @product.views %>
+  </span>
+</h6> 
+
+
+
+ 
   <div class="comment-section">
     <%= render partial:'new_comment' %>
     <%= will_paginate @comments %>
