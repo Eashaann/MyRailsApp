@@ -31,7 +31,8 @@
       </div>
     </div>
   </div>  
- 
+<% end %>
+
 <h6>  
   Views:
   <span class="badge">
@@ -39,9 +40,6 @@
   </span>
 </h6> 
 
-
-
- 
   <div class="comment-section">
     <%= render partial:'new_comment' %>
     <%= will_paginate @comments %>
@@ -53,4 +51,3 @@
     <%= link_to 'Back', products_path ,class:"btn btn-default btn-special  btn-xs" %>
   </div>
 </div>
-<% end %>

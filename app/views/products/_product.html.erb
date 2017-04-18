@@ -24,7 +24,8 @@
 		 		<% end %>
 
 			  <strong>$<%= product.price %></strong><br>
-			
+			  
+<% end %>			
 			  <br>
 			  <p><%= link_to 'View Details >>', product , class:"btn btn-default btn-xs" %>
 		  		<% if signed_in? && current_user.admin? %>
@@ -35,7 +36,7 @@
 		  </div>
 		</div>
 	</div><!-- /col -->
-<% end %>
+
 
 
 
