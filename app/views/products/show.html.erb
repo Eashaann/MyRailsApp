@@ -1,6 +1,6 @@
 <% cache @product do %>
 <div class="medium-container products-show">
-  <div class="row">
+  <div class="row" data-product-id="<%= @product.id %>">
     <div class="col-md-6 show-img-area">
       <% if @product.image_url== nil || @product.image_url==""%>
         <%= image_tag("Empty-img.png", class: "img-responsive") %>
