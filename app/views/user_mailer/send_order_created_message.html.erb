@@ -1,7 +1,10 @@
 <table>
   <tbody>
     <tr>
-      <td><p>Successfully Orderd.</p></td>
+      <td><p>Your purchase is successful.</p></td>
+      <td><p>Order id: <%= @order.id %></p></td>
+      <td><p>Item : <%= @order.product.name %></p></td>
+      <td><p>Total amount:$ <%= @order.total %></p></td>
     </tr>
    
   </tbody>
