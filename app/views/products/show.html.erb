@@ -23,18 +23,21 @@
           <!-- <p>Lowest Rating: <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div> </p> -->
           <br>
          
+
+
         <% if user_signed_in? %> 
           <%= form_tag "/payments/create" do %>
             <%= render partial: "shared/stripe_checkout_button" %>
           <% end %>
+          <%else%>
+          <h5 id="pay-btn"><%= link_to('Pay with Card', new_user_session_path) %></h5> 
         <% end %>
       </div>
     </div>
   </div>  
 <% end %>
 
-<h6>  
-  Views:
+<h6>Views:
   <span class="badge">
     <%= @product.views %>
   </span>

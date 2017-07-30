@@ -72,6 +72,21 @@
 .product-reviews{
 	padding: 10px 30px; 
 }
+
+//pay button
+#pay-btn a{
+	color: #3d3d4f;
+	padding: 3% 5%;
+	background-color: #868f32;
+}
+#pay-btn a:hover{
+	color: #868f32;
+	text-decoration: none;
+	background-color: #3d3d4f;
+}
+
+
+//comment area
 .show-comment{
 	width: 50%;
 	margin: 0 auto; 
