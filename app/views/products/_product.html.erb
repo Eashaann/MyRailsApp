@@ -26,11 +26,11 @@
 			  <strong>$<%= product.price %></strong><br>
 
 				<br>
-			  <p><%= link_to 'View Details >>', product , class:"btn btn-default btn-xs" %>
+			  <p><%= link_to 'View Details >>', product , class:"btn btn-default btn-sm" %>
 <% end %>			  	
 		  		<% if signed_in? && current_user.admin? %>
-		      	<%= link_to 'Edit', edit_product_path(product) , class:"btn btn-default btn-xs" %>
-				    <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-default btn-xs" %>
+		      	<%= link_to 'Edit', edit_product_path(product) , class:"btn btn-default btn-sm" %>
+				    <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-default btn-sm" %>
 				  <% end %>
 			  </p>	
 		  </div>

@@ -2,13 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+//==========================================================================
 //show user page, new user page, forgot password page , log-in page styling
-.user-show, .new-user, .forgot-password, .log-in-page, .change-password{
+//==========================================================================
+.user-show, 
+.new-user, 
+.forgot-password, 
+.log-in-page, 
+.change-password{
 	padding: 30px 50px 50px; 
 }
 
+//=========================================
 //sign up page ,Edit user page,log in page
+//=========================================
 .log-in-page{
 	text-align: center;
 }
@@ -16,7 +23,8 @@
 	display: block; 
 	width: 100% ;
 }
-.sign-up, .user-edit{
+.sign-up, 
+.user-edit{
 	padding: 20px 50px;
 }
 .sign-up h3{
@@ -34,10 +42,15 @@
 	margin: 20px 0;
 }
 
-
+//============================
+//Media Queries
+//============================
 
 @media (max-width: 500px) {
-.user-edit, .log-in-page, .sign-up, .forgot-password{
+.user-edit, 
+.log-in-page, 
+.sign-up, 
+.forgot-password{
 	width: 100%;
 	padding: 15px; 
 	}

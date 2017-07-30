@@ -3,6 +3,7 @@
   <head>
     <title>Newapp</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
@@ -29,27 +30,27 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		      	<li class="active" id="home"><%=link_to 'Home', root_path%></li>
-		      	<li ><%=link_to 'Featured Products' , featured_path%></li>
+		      	<li class="active" id="home"><%=link_to 'HOME', root_path%></li>
+		      	<li ><%=link_to 'FEATURED' , featured_path%></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		      	<li><%=link_to 'Products' , products_path%></li>
-		     		<li><%=link_to 'About' , about_path%></li>
-		     		<li><%=link_to 'Contacts' , contact_path%></li>
+		      	<li><%=link_to 'PRODUCTS' , products_path%></li>
+		     		<li><%=link_to 'ABOUT' , about_path%></li>
+		     		<li><%=link_to 'CONTACTS' , contact_path%></li>
 
 		        <% if user_signed_in? %>
-							<li>	<%=link_to 'My Orders' , orders_path%></li>
-				    	<li><%=link_to 'Settings' , edit_user_registration_path%></li>
-			        <li><%= link_to('Logout', destroy_user_session_path, :method => :delete , data: { confirm: "Are you sure?" }) %></li>
+							<li>	<%=link_to 'ORDERS' , orders_path%></li>
+				    	<li><%=link_to 'SETTINGS' , edit_user_registration_path%></li>
+			        <li><%= link_to('LOGOUT', destroy_user_session_path, :method => :delete , data: { confirm: "Are you sure?" }) %></li>
 						<% else %>
-						  <li><%= link_to('Login', new_user_session_path) %>  </li>	
+						  <li><%= link_to('LOGIN', new_user_session_path) %>  </li>	
 						<% end %>
 		      </ul>
 		      
 		      <!-- search field -->
-			     <%= form_tag("/products", method: "get",class: "navbar-form navbar-left") do %>
+			     <%= form_tag("/products", method: "get",class: "navbar-form navbar-left search-area") do %>
 					  <%= text_field_tag(:q, nil, class: "form-control ",placeholder: "Search") %>
-				  	<%= button_tag(type: 'submit', class: "btn btn-search") do %>
+				  	<%= button_tag(type: 'submit', class: "btn search-btn") do %>
 						  <span class="glyphicon glyphicon-search"></span> 
 						<% end %>
 					<% end %>
@@ -73,7 +74,7 @@
 		
 			<%= yield %>
 			<footer class="container-fluid" id="footer">
-			  &copy; 2017 Bike Berlin
+			  &copy; 2017 EASHA
 			</footer>
 		</div> <!-- page content end -->
 		

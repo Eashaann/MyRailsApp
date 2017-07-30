@@ -2,12 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//=============================
 //products index page styling
+//============================
 .products-grid{
  	padding: 30px;
  	margin: 10px 0;
-	box-shadow: 2px 2px 5px #e2e2e2; 
+	box-shadow: 2px 2px 5px #3d3d4f; 
 	text-align: center;
+}
+.products-grid:hover{
+	box-shadow: 2px 2px 5px #868f32; 
 }
 .products-img {
 	padding: 10px; 
@@ -22,7 +27,9 @@
 }
 
 
+//=============================
 //products-eidt-page
+//============================
 .product-edit{
 	padding: 30px;
 }
@@ -32,16 +39,19 @@
 }
 
 
+//=============================
 //new products page
+//============================
 #new-products-page{
 	padding: 20px 30px;
 }
 #error_explanation{
-	color:red;
+	color: #571c33;
 }
 
-
+//=============================
 //show page styling
+//============================
 .show-img{
 	max-width: 90%; 
 }
@@ -80,15 +90,10 @@
 }
 
 
-/*Typography*/
 
-h1,
-h2,
-h3 {
-  font-family: Futura, Helvetica, Arial, sans-serif;
-}
-
-
+//=============================
+//Media Queries
+//============================
 @media (max-width: 500px) {
  .product-show-desc, .comment-section, {
 		padding: 0;
