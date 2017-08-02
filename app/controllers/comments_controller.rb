@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
         format.json { render :show, status: :created, location: @product }
         format.js
       else
-        format.html { redirect_to @product, alert: 'Comment was not saved successfully.' }
+        format.html { redirect_to @product, alert: 'Comment was not saved successfully. Please mention your comment and the rating!' }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end

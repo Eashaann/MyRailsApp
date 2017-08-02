@@ -51,8 +51,8 @@
     
     <%= render 'comments' %>  
     <br>
+    
     <% if signed_in? && current_user.admin? %>
- 
       <%= link_to 'Edit', edit_product_path(@product) ,class:"btn btn-default btn-special  btn-xs" %> |
     <% end %>
 

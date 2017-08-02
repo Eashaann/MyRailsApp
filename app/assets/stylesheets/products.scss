@@ -16,7 +16,13 @@
 }
 .products-img {
 	padding: 10px; 
-	min-height: 300px;
+	height: 200px;
+}
+.products-img img{
+	height: 100%;
+	display: block;
+	margin:auto;
+	border-radius: 0;
 }
 #description{
 	height: 75px;
